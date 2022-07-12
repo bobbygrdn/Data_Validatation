@@ -7,3 +7,22 @@
 body {
     background-color: turquoise;
 }
+
+#header {
+    text-align: center;
+    font-size: 42px;
+}
+
+.feed {
+    margin: 10px;
+    border: 2px solid black;
+    display: grid
+}
+.innerFeed {
+    margin: 10px;
+    border: 2px solid black;
+}
+
+#inputForm {
+    display: none;
+}
