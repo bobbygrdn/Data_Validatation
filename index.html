@@ -4,9 +4,24 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="./script.js"></script>
+        <script defer src="/app.js"></script>
         <link rel="stylesheet" href="./style.css" />
 		<title>Company Chat Line</title>
 	</head>
-	<body></body>
+	<body>
+        <div id="header">
+            <h1>Company Chat Line</h1>
+            <h5>Leave an anonymous comment for the HR team. We value your feedback and want to help make this company great!</h5>
+        </div>
+        <div class="innerFeed">
+            <button class="commentButton">Comment</button>
+            <form id="inputForm" onsubmit="return false">
+                <input name="comments" type="text" placeholder="Enter your comment here">
+                <input class="submit" name="submit" type="submit" onClick="filter(this.form)">
+            </form>
+            <div class="feed">
+                <h2></h2>
+            </div>
+        </div>
+    </body>
 </html>
